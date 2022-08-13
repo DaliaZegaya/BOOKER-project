@@ -1,0 +1,45 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif
+}
+
+body,
+html {
+    height: 100%;
+    line-height: 1.8;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-link{
+    color: black !important;
+}
+
+.navbar-toggler-icon {
+   background-image:  url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.bg-color{
+    background-color: rgb(159, 156, 156);
+}
+
+.footer-icons{
+    font-size: 30px;
+}
+
+.contact-img{
+    height: 70vh !important;
+}
+
+.form{
+    width: 35vw !important;
+    height: 80vh !important;
+}
+

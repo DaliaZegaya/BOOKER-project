@@ -18,7 +18,6 @@
 <body>
 
 
-  <!----------------HEADER---------------------->
 
 
 
@@ -32,7 +31,7 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse " id="navbarNavDropdown">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/index.html">HOME</a>
@@ -42,13 +41,18 @@
                 OUR BOOKS
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="/html-pages/books.html">All books</a></li>
                 <li><a class="dropdown-item" href="/html-pages/harry-potter.html">harry potter</a></li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/html-pages/about.html">ABOUT US</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                ABOUT US
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/html-pages/about.html">About BOOKER</a></li>
+                <li><a class="dropdown-item" href="/html-pages/team.html">Our team</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/html-pages/contact.html">CONTACT US</a>
@@ -64,7 +68,7 @@
 
 
     <!-- About Section -->
-    <div class="w3-container" style="padding:128px 16px" id="about">
+    <div class="w3-container" style="padding:50px 16px" id="about">
       <h3 class="w3-center">OUR CATEGORY</h3>
       <p class="w3-center w3-large">Key features of our company</p>
       <div class="w3-row-padding w3-center" style="margin-top:64px">
@@ -72,34 +76,34 @@
         <div class=" d-flex justify-content-center ">
           <div id="bloggers" class="row ">
             <div class="col-md-3 col-sm-12 card">
-              <img class="blog-img" src="/images/romanticbook.jpg" alt="">
+              <img class="blog-img category-img" src="/images/romanticbook.jpg" alt="" class="home-img">
               <div class="card-body">
                 <h5 class="card-title">ROMANCE</h5>
-                <a href="#!" class="btn btn-warning">MORE</a>
+                <a href="/html-pages/books.html" class="btn btn-warning">MORE</a>
               </div>
             </div>
 
             <div class="col-md-3 col-sm-12 card">
-              <img class="blog-img" src="/images/actionbook.jpg" alt="">
+              <img class="blog-img category-img" src="/images/actionbook.jpg" alt="" class="home-img">
               <div class="card-body">
                 <h5 class="card-title">ACTION</h5>
-                <a href="#!" class="btn btn-warning">MORE</a>
+                <a href="/html-pages/books.html" class="btn btn-warning">MORE</a>
               </div>
             </div>
 
             <div class="col-md-3 col-sm-12 card">
-              <img class="blog-img" src="/images/dramabook.jpg" alt="">
+              <img class="blog-img category-img" src="/images/dramabook.jpg" alt="" class="home-img">
               <div class="card-body">
                 <h5 class="card-title">BIOGRAPHY</h5>
-                <a href="#!" class="btn btn-warning">MORE</a>
+                <a href="/html-pages/books.html" class="btn btn-warning">MORE</a>
               </div>
             </div>
 
             <div class="col-md-3 col-sm-12 card">
-              <img class="blog-img" src="/images/deepbook.jpg" alt="">
+              <img class="blog-img category-img" src="/images/deepbook.jpg" alt="">
               <div class="card-body">
                 <h5 class="card-title">DEEP</h5>
-                <a href="#!" class="btn btn-warning">MORE</a>
+                <a href="/html-pages/books.html" class="btn btn-warning">MORE</a>
               </div>
             </div>
 
@@ -117,13 +121,14 @@
       <div class="splitscreen">
         <div class="splittext">
           <h1 class="text-center">THE BOOK OF THE MONTH</h1>
-          <section class="gradient-custom">
+          <section class="gradient-custom" id="review">
             <div class="container my-5 py-5">
               <div class="row d-flex justify-content-center">
                 <div class="col-md-12">
                   <div class="text-center mb-4 pb-2">
                     <i class="fas fa-quote-left fa-3x text-white"></i>
                   </div>
+
 
                   <div class="card">
                     <div class="card-body px-4 py-5">
@@ -155,7 +160,7 @@
                                     class="col-9 col-md-9 col-lg-7 col-xl-8 text-center text-lg-start mx-auto mx-lg-0">
                                     <h4 class="mb-4">Maria Smantha - Web Developer</h4>
                                     <p class="mb-0 pb-3">
-                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                                      Very good book,consectetur adipisicing elit. A
                                       aliquam amet animi blanditiis consequatur debitis dicta
                                       distinctio, enim error eum iste libero modi nam natus
                                       perferendis possimus quasi sint sit tempora voluptatem. Est,
@@ -198,7 +203,7 @@
                                     class="col-9 col-md-9 col-lg-7 col-xl-8 text-center text-lg-start mx-auto mx-lg-0">
                                     <h4 class="mb-4">Lisa Cudrow - Graphic Designer</h4>
                                     <p class="mb-0 pb-3">
-                                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                      Amazing book, omnis iste natus error sit voluptatem
                                       accusantium doloremque laudantium, totam rem aperiam, eaque
                                       ipsa quae ab illo inventore veritatis et quasi architecto
                                       beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
@@ -241,7 +246,7 @@
                                     class="col-9 col-md-9 col-lg-7 col-xl-8 text-center text-lg-start mx-auto mx-lg-0">
                                     <h4 class="mb-4">John Smith - Marketing Specialist</h4>
                                     <p class="mb-0 pb-3">
-                                      At vero eos et accusamus et iusto odio dignissimos qui
+                                      Great book, accusamus et iusto odio dignissimos qui
                                       blanditiis praesentium voluptatum deleniti atque corrupti quos
                                       dolores et quas molestias excepturi sint occaecati cupiditate
                                       non provident, similique sunt in culpa qui officia mollitia
@@ -301,7 +306,7 @@
 
         </div>
         <div class="splitvideo">
-          <img src="/images/bookmonth.jpg" alt="">
+          <img class="img-fluid" src="/images/bookmonth.jpg" alt="">
         </div>
       </div>
 
@@ -310,47 +315,47 @@
     
 
     <!-- Team Section -->
-    <div class="w3-container" style="padding:40px 16px" id="team">
+    <div class="w3-container" style="padding:70px 16px" id="team">
       <h3 class="w3-center">THE BOOKS YOU MUST READ</h3>
       <p class="w3-center w3-large">The ones who runs this company</p>
       <div class="w3-row-padding " style="margin-top:50px">
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-card">
-            <img src="/images/book10.webp" alt="John" style="width:100%; height:50vh ;">
+            <img src="/images/book10.webp" alt="John" style="width:100%; height:55vh ;">
             <div class="w3-container">
               <h3>John Doe</h3>
               <p class="w3-opacity">AUTHOR</p>
-              <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+              <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>READ</button></p>
             </div>
           </div>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-card">
-            <img src="/images/book12.jpg" alt="Jane" style="width:100%; height:50vh ;">
+            <img src="/images/book12.jpg" alt="Jane" style="width:100%; height:55vh ;">
             <div class="w3-container">
               <h3>Anja Doe</h3>
               <p class="w3-opacity">AUTHOR</p>
-              <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+              <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>READ</button></p>
             </div>
           </div>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-card">
-            <img src="/images/book5.webp" alt="Mike" style="width:100%; height:50vh ;">
+            <img src="/images/book5.webp" alt="Mike" style="width:100%; height:55vh ;">
             <div class="w3-container">
               <h3>Mike Ross</h3>
               <p class="w3-opacity">AUTHOR</p>
-              <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+              <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>READ</button></p>
             </div>
           </div>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-card">
-            <img src="/images/book1.webp" alt="Dan" style="width:100%; height:50vh ;">
+            <img src="/images/book1.webp" alt="Dan" style="width:100%; height:55vh ;">
             <div class="w3-container">
               <h3>Dan Star</h3>
               <p class="w3-opacity">AUTHOR</p>
-              <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+              <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>READ</button></p>
             </div>
           </div>
         </div>
@@ -379,36 +384,36 @@
 
     <!-- Work Section -->
     <div class="w3-container" style="padding:128px 16px" id="work">
-      <h3 class="w3-center">OUR BOOK CLUB</h3>
+      <h3 class="w3-center">OUR COMMUNITY</h3>
       <p class="w3-center w3-large">What we've done for people</p>
 
       <div class="w3-row-padding" style="margin-top:64px">
         <div class="w3-col l3 m6">
-          <img src="/images/pexels-photo-cool.jpeg" style="width:100%" alt="A microphone">
+          <img src="/images/pexels-photo-cool.jpeg" style="width:100%" alt="A microphone" class="home-img">
         </div>
         <div class="w3-col l3 m6">
-          <img src="/images/pexels-photo-kids.webp" style="width:100%" alt="A phone">
+          <img src="/images/pexels-photo-kids.webp" style="width:100%" alt="A phone" class="home-img"> 
         </div>
         <div class="w3-col l3 m6">
-          <img src="/images/pexels-photo-men-hw.jpeg" style="width:100%" alt="A drone">
+          <img src="/images/pexels-photo-men-hw.jpeg" style="width:100%" alt="A drone" class="home-img">
         </div>
         <div class="w3-col l3 m6">
-          <img src="/images/pexels-photo-cuteboy.jpeg" style="width:100%" alt="Soundbox">
+          <img src="/images/pexels-photo-cuteboy.jpeg" style="width:100%" alt="Soundbox" class="home-img">
         </div>
       </div>
 
       <div class="w3-row-padding w3-section">
         <div class="w3-col l3 m6">
-          <img src="/images/pexels-photo-women.jpeg" style="width:100%" alt="A tablet">
+          <img src="/images/pexels-photo-women.jpeg" style="width:100%" alt="A tablet" class="home-img">
         </div>
         <div class="w3-col l3 m6">
-          <img src="/images/joinpic.webp" style="width:100%" alt="A camera">
+          <img src="/images/joinpic.webp" style="width:100%" alt="A camera" class="home-img">
         </div>
         <div class="w3-col l3 m6">
-          <img src="/images/pexels-photo-kidsWmen.jpeg" style="width:100%" alt="A typewriter">
+          <img src="/images/pexels-photo-kidsWmen.jpeg" style="width:100%" alt="A typewriter" class="home-img">
         </div>
         <div class="w3-col l3 m6">
-          <img src="/images/pexels-photo-pyton.jpeg" style="width:100%" alt="A tableturner">
+          <img src="/images/pexels-photo-pyton.jpeg" style="width:100%" alt="A tableturner" class="home-img">
         </div>
       </div>
     </div>
@@ -462,10 +467,10 @@
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
               <!-- Content -->
               <h6 class="text-uppercase fw-bold mb-4">
-                <i class="fas fa-gem me-3"></i>UNBOX YOUR MOBILE
+                <i class="fas fa-gem me-3"></i>BOOKER
               </h6>
               <p>
-                UYM is a place where you can get credible reviews on cell phones and also share your own reviews.
+                BOOKER is a community for readers, writers and one big family.
               </p>
             </div>
             <!-- Grid column -->
@@ -477,10 +482,10 @@
                 Products
               </h6>
               <p>
-                <a href="#!" class="text-reset">APPLE</a>
+                <a href="#!" class="text-reset">Books</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">SAMSUNG</a>
+                <a href="#!" class="text-reset">Books club</a>
               </p>
             </div>
             <!-- Grid column -->
@@ -509,7 +514,7 @@
               <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
               <p>
                 <i class="fas fa-envelope me-3"></i>
-                uym@gmail.com
+                booker@gmail.com
               </p>
             </div>
             <!-- Grid column -->
@@ -522,7 +527,7 @@
       <!-- Copyright -->
       <div class="text-center p-4 bg-color" style="color: black;">
         © 2021 Copyright:
-        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">UYM.com</a>
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">BOOKER.com</a>
       </div>
       <!-- Copyright -->
     </footer>

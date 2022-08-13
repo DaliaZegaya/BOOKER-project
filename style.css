@@ -39,7 +39,9 @@ html {
     min-height: 100%;
 }
 
-
+.category-img{
+    height: 55vh;
+}
 
 .bg-color {
     background-color: rgb(159, 156, 156);
@@ -101,4 +103,12 @@ html {
     border-radius: 50%;
     width: 10px;
     height: 10px;
+}
+
+.home-img{
+    height: 60vh;
+}
+
+.footer-icons{
+    font-size: 30px;
 }

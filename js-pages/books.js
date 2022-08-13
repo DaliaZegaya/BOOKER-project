@@ -43,30 +43,83 @@ let imagesArray = [
 //         .catch(err => console.error(err));
 // }
 
-// function printBooksToScreen() {
-//         // gifDiv.innerHTML= '<img style= "width:7vw" src= /images/loading.gif> </img>'
-//         getBooks()
-//             .then((result) => {
-//                 for(let i =0; i<16;i++){
-//                     mainBooks.innerHTML +=
-//                         `<div class="card col-md-3 col-sm-6 books-card">
-//                            <img src="${imagesArray[i] ? imagesArray[i] : imagesArray[0]}" class="card-img-top books-img"/>
-//                             <div class="card-body card-page">
-//                             <p class="">${result[i].TITLE}</p>
-//                             <p>AUTHOR:${result[i].AUTHOR}</p>
-//                             <p>LANG:${result[i].LANG}</p>
-//                              <p>YEAR:${result[i].YEAR}</p>
-//                            </div>
-//                         </div>`;
-//                 }
-//             })
-//             .catch(() => { })
-//             .finally(() => {
-//                 //   gifDiv.innerHTML= ""
-//             });
 
-//     }
-//      printBooksToScreen();
+// function printBooksToScreen() {
+//     // gifDiv.innerHTML= '<img style= "width:7vw" src= /images/loading.gif> </img>'
+//     getBooks()
+//         .then((result) => {
+//             for (let i = 0; i < 20; i++) {
+//                 mainBooks.innerHTML +=
+//                     `<div class="col-md-3 col-sm-12 m6 w3-margin-bottom">
+//                      <div class="w3-card">
+//                        <img src="${imagesArray[i] ? imagesArray[i] : imagesArray[0]}" alt="John"
+//                        style="width:100%; height:55vh ;">
+//                        <div class="w3-container">
+//                        <p class="text-center">${result[i].TITLE}</p>
+//                        <p>AUTHOR:${result[i].AUTHOR}</p>
+//                        <p>release Day:${result[i].YEAR}</p>
+//                        <p><button onclick=allBooks(${result[i].id}) class="btn bg-warning  w3-button w3-light-grey w3-block">READ</button></p>
+//                      </div>
+//                      </div>
+//                      </div>`
+
+//             }
+//         })
+//         .catch(() => { })
+//         .finally(() => {
+//             //   gifDiv.innerHTML= ""
+//         });
+
+// }
+// printBooksToScreen();
+
+
+function allBooks(id) {
+    getBooks().then(data => {
+        document.getElementById("mainBooks").innerHTML =
+            ` <div class="row description ">
+              <div class="col-xl-6 col-lg-6 col-md-6 text-center" style="border:1px solid #ddd">
+              <h2> ${data[id - 1].TITLE} </h2>
+              <p>
+              <ul class="list-unstyled d-flex justify-content-center mb-0">
+              <li>
+                <i class="bi bi-star-fill text-warning"></i>
+              </li>
+              <li>
+                <i class="bi bi-star-fill text-warning"></i>
+              </li>
+              <li>
+                <i class="bi bi-star-fill text-warning"></i>
+              </li>
+              <li>
+                <i class="bi bi-star-fill text-warning"></i>
+              </li>
+              <li>
+                <i class="bi bi-star-fill text-warning"></i>
+              </li>
+            </ul>
+              </p>
+              <p>${data[id].AUTHOR}</p>
+              <br/>
+              <p>${data[id]['PUBLISHER_CITY']}</p>
+              <p>
+              dolor sit amet, consectetur adipisicing elit. A
+              aliquam amet animi blanditiis consequatur debitis dicta
+              distinctio, enim error eum iste libero modi nam natus
+              perferendis possimus quasi sint sit tempora voluptatem. Est,
+              exercitationem id ipsa ipsum laboriosam perferendis.
+              <p>
+              <br/>
+              <button class="btn bg-warning"> <b> READ NOW </b> </button>
+              </div>
+
+              <div class="col-xl-6 col-lg-6 col-md-6 d-flex justify-content-center" style="border:1px solid #ddd">
+              <img src="${imagesArray[id - 1]}" alt="responsive webite"
+              class="img-fluid mini-harry"  style="width:30vw ;">
+              </div>
+              </div>`
+    })
+}
 
 
 
@@ -102,14 +155,16 @@ function printHarryPotterToScreen() {
                             <p class="text-center">${obj.title}</p>
                             <p>AUTHOR:${obj.author}</p>
                             <p>release Day:${obj.releaseDay}</p>
-                            <button onclick="someFunc(${i})">hhh</button>
+                            <button class="btn bg-warning w3-button w3-light-grey w3-block" onclick="harryPotterFunc(${obj.id})"> <b> READ </b> </button>
                            </div>
                         </div>`;
+
 
             });
 
         })
 }
+
 printHarryPotterToScreen()
 // <p>DESCRIPTION:${obj.description}</p>
 // author: "J. K. Rowling"
@@ -119,9 +174,50 @@ printHarryPotterToScreen()
 // title: "Harry Potter and the Sorcerer's Stone"
 
 
-// function someFunc (text){
-//     console.log(text);
-    
-//     // document.querySelector('#harryPotter').innerHTML= ` <img src="${harryPotterArray[id]}" class="card-img-top harry-img"/>`
+function harryPotterFunc(id) {
+    getHarryPotterBooks().then(data => {
+        document.getElementById("harryPotter").innerHTML =
+            ` <div class="row description ">
+              <div class="col-xl-6 col-lg-6 col-md-6 text-center" style="border:1px solid #ddd">
+              <h2> ${data[id - 1].title} </h2>
+              <p>
+              <ul class="list-unstyled d-flex justify-content-center mb-0">
+              <li>
+                <i class="bi bi-star-fill text-warning"></i>
+              </li>
+              <li>
+                <i class="bi bi-star-fill text-warning"></i>
+              </li>
+              <li>
+                <i class="bi bi-star-fill text-warning"></i>
+              </li>
+              <li>
+                <i class="bi bi-star-fill text-warning"></i>
+              </li>
+              <li>
+                <i class="bi bi-star-fill text-warning"></i>
+              </li>
+            </ul>
+              </p>
+              <p>${data[id].author}</p>
+              <br/>
+              <p>${data[id]['description']}</p>
+              <br/>
+              <button class="btn bg-warning"> <b> READ NOW </b> </button>
+              </div>
 
-// }
+              <div class="col-xl-6 col-lg-6 col-md-6 d-flex justify-content-center">
+              <img src="${harryPotterArray[id - 1]}" alt="responsive webite"
+              class="img-fluid mini-harry"  style="width:30vw ;">
+              </div>
+              </div>`
+    })
+}
+
+
+
+
+
+
+
+
