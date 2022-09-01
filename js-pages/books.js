@@ -129,7 +129,7 @@ let harryPotterArray = [
     'https://images-na.ssl-images-amazon.com/images/I/91HHqVTAJQL.jpg',
     'https://images-na.ssl-images-amazon.com/images/I/91t5-Juqt9L.jpg',
     'https://images-na.ssl-images-amazon.com/images/I/81EbEWM54ML.jpg',
-    'https://images-na.ssl-images-amazon.com/images/I/61fC7BtuI4L.jpg',
+    'https://images-na.ssl-images-amazon.com/images/I/61fC7BtuI4L.jpgg',
     'https://images-na.ssl-images-amazon.com/images/I/915i0eI3J8L.jpg',
     'https://images-na.ssl-images-amazon.com/images/I/81TxOqW-jaL.jpg',
     'https://images-na.ssl-images-amazon.com/images/I/81YOuOGFCJL.jpg'
@@ -153,7 +153,7 @@ function printHarryPotterToScreen() {
                           <img src="${harryPotterArray[i] ? harryPotterArray[i] : harryPotterArray[0]}" class="card-img-top harry-img"/>
                             <div class="card-body card-page">
                             <p class="text-center">${obj.title}</p>
-                            <p>AUTHOR:${obj.author}</p>
+                            <p>AUTHOR:${obj.authorc}</p>
                             <p>release Day:${obj.releaseDay}</p>
                             <button class="btn bg-warning w3-button w3-light-grey w3-block" onclick="harryPotterFunc(${obj.id})"> <b> READ </b> </button>
                            </div>
